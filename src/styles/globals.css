@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollNone::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollNone {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  @layer components {
+    .admin-card {
+      @apply shadow-[0_0.25rem_1.125rem_rgba(75,70,92,0.1)] bg-white rounded-[10px] p-3 md:p-5;
+    }
+    /* Admin panel */
+    .admin-container {
+      @apply container mx-auto px-2 py-2 md:px-4 md:py-4 lg:py-3 2xl:py-0 lg:px-5 2xl:px-6;
+    }}
